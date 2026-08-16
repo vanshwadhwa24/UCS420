@@ -1,0 +1,241 @@
+1 Hello World
+Learning: How to print and run python program
+
+
+print ("Hello World")
+     
+Hello World
+Assingment 1.1: WAP to print your name three times
+
+2 Add numbers and Concatinate strings
+Learning: How to declare variable, add, concatenate and print the result.
+
+2.1 Add two numbers
+
+a = 10
+b = 220
+c = a + b       # Add two numbers
+print (a, " + ", b, " --> ", c)
+     
+10  +  220  -->  230
+2.2 Concatinate two strings
+
+a = "Bhagat"
+b = " Singh"
+c = a + b		# Concatinate two strings
+print (a, " + ", b, " --> ", c)
+     
+Bhagat  +   Singh  -->  Bhagat Singh
+2.3 Concatinate string with number
+
+a = "Bhagat"
+b = 100
+c = a + str(b)		# Concatinate string with number
+print (a, " + ", b, " --> ", c)
+
+     
+Bhagat  +  100  -->  Bhagat100
+Assingment 2.1: WAP to add three numbers and print the result.
+
+Assingment 2.2: WAP to concatinate three strings and print the result.
+
+3 Input from user
+Learning: How to take input from user
+
+3.1 Input two strings from user and concatinate them
+
+a = input("Enter First String: ")
+b = input("Enter Second String: ")
+c = a + b		# concatinate two strings
+print  (a, " + ", b, "      --> ", c)
+
+# Run the program with (1) Two strings and (2) Two numbers
+     
+Enter First String: Shyam
+Enter Second String: Patiala
+Shyam  +  Patiala       -->  ShyamPatiala
+3.2 Input two numbers from user and add them
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+c = a + b
+print (a, " + ", b, " --> ", c)
+     
+Enter First No: 45
+Enter Second No: 87
+45  +  87  -->  132
+4 Loop
+Learning: Learn various loops.
+
+4.1 While Loop
+
+i=1
+while i <= 10:
+	print (i)
+	i = i+1
+     
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+4.2 Range Function
+
+print ("range(10)        --> ", list(range(10)))
+print ("range(10,20)     --> ", list(range(10,20)))
+print ("range(0,20,2)    --> ", list(range(2,20,2)))
+print ("range(-10,-20,2) --> ", list(range(-10,-20,2)))
+print ("range(-10,-20,-2)--> ", list(range(-10,-20,-2)))
+     
+range(10)        -->  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+range(10,20)     -->  [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+range(0,20,2)    -->  [2, 4, 6, 8, 10, 12, 14, 16, 18]
+range(-10,-20,2) -->  []
+range(-10,-20,-2)-->  [-10, -12, -14, -16, -18]
+4.3 For loop
+4.3.1 For loop - Version 1
+
+for i in range(0,10):
+	print (i)
+     
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+4.3.2 For loop - Version 2
+
+for i in range(0,20,2):
+	print (i)
+     
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+4.3.3 For loop - Version 3
+
+for i in range(0,-10,-1):
+	print (i)
+     
+0
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+4.4 Print table of 5
+
+for i in range(1,11):
+	print (5," * ", i , " = ", i * 5)
+     
+5  *  1  =  5
+5  *  2  =  10
+5  *  3  =  15
+5  *  4  =  20
+5  *  5  =  25
+5  *  6  =  30
+5  *  7  =  35
+5  *  8  =  40
+5  *  9  =  45
+5  *  10  =  50
+4.5 Sum all numbers from 1 to 10
+4.5.1 Version 1
+
+s=0
+for i in range(1,11):
+	s=s+i
+print ("Sum is --> ",s)
+     
+Sum is -->  55
+4.5.2 Version 2
+
+print ("Sum is --> ", sum(range(1,11)))
+     
+Sum is -->  55
+Assingment 4.1: WAP to print the table of 7, 9.
+
+Assingment 4.2: WAP to print the table of n and n is given by user.
+
+Assingment 4.3: WAP to add all the numbers from 1 to n and n is given by user.
+
+5 If-Else - Conditional Checking
+Learning: if-else Condition
+
+5.1 Input two numbers from user and compare them
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+if  a > b:
+	print (a," > ",b)
+else:
+	print (a," < ",b)
+     
+Enter First No: 43
+Enter Second No: 21
+43  >  21
+5.2 Check weather a number is odd or even
+
+n = int(input("Enter a No: "))
+if  n % 2 == 0:
+	print (n," is even")
+else:
+	print (n," is odd")
+     
+Enter a No: 23
+23  is odd
+5.3 Check weather a number is prime of not
+
+n = int(input("Enter a No: "))
+f=0
+for i in range(2, n//2 + 1):
+	if  n % i == 0:
+		f=1
+		break
+
+if f==0:
+	print ("Prime")
+else:
+	print ("Not Prime")
+     
+Enter a No: 45
+Not Prime
+5.4 Conditional Checking - Compare strings
+
+a = input("Enter First String : ")
+b = input("Enter Second String: ")
+
+if a == b:
+	print ("a == b")
+elif a >= b:
+	print ("a > b")
+else:
+	print ("a < b")
+     
+Enter First String : User
+Enter Second String: Friend
+a > b
+Assingment 5.1: WAP to find max amoung three numbers and input from user. [Try max() function]
+
+Assingment 5.2: WAP to add all numbers divisible by 7 and 9 from 1 to n and n is given by the user.
+
+Assingment 5.3: WAP to add all prime numbers from 1 to n and n is given by the user.

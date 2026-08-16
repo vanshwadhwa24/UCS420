@@ -70,3 +70,16 @@ for x in range(2, n + 1):
         s = s + x
 
 print(s)
+# Assignment 6.1
+def Add_two_nums(a,b):
+          c=a+b
+          return c
+	
+print Add_two_nums(4,9)
+
+#Assignment 6.2
+def IsPrime(a):
+	for i in range (2,n//2+1):
+		if n%i==0:
+				return true
+		
